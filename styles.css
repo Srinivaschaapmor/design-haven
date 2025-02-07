@@ -2,9 +2,25 @@
   margin: 0;
   max-width: 100%;
 }
+.sticky-wrap {
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 50px;
+  position: fixed;
+  right: 0px;
+  top: 30%;
+  z-index: 100;
+  text-decoration: underline;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .window-treatments-section {
-  background-color: #ee5050;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +127,7 @@
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  font: 400 36px Alexandria, serif !important;
+  font: 400 36px Alexandria, sans-serif;
 }
 
 .products-title {
@@ -163,8 +179,8 @@
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 113px;
-  font: 400 36px/2 "Amiri Quran", sans-serif;
+  margin-top: 30px;
+  font: 300 30px/2 "Amiri Quran", sans-serif;
 }
 
 .image-grid {
@@ -201,12 +217,12 @@
 }
 
 .footer {
-  background-color: #000;
+  background-color: #000000;
   width: 100%;
   color: #fff;
   text-align: center;
-  /* padding: 129px 67px; */
-  padding: 30px;
+  padding: 70px 67px;
+
   font: 24px Alexandria, sans-serif;
 }
 
@@ -214,7 +230,8 @@
   display: flex;
   margin-bottom: -29px;
   width: 100%;
-  max-width: 1239px;
+  /* max-width: 1239px; */
+  padding: 0px 100px;
   align-items: start;
   gap: 20px;
   justify-content: space-between;
@@ -241,6 +258,7 @@
 .footer-column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .footer-heading {
@@ -251,6 +269,10 @@
 .footer-text {
   font-weight: 300;
   margin-top: 39px;
+}
+.footer-text a {
+  color: white;
+  text-decoration: none; /* Remove underline if needed */
 }
 
 .visually-hidden {
@@ -264,6 +286,133 @@
   white-space: nowrap;
   border: 0;
 }
+
+/* header */
+
+.header-footer {
+  background-color: #000;
+  padding: 10px 40px;
+  /* text-align: center; */
+  width: 100%;
+}
+
+.header-divider {
+  background-color: #fff;
+  display: flex;
+  margin-top: 7px;
+  flex-shrink: 0;
+  height: 1px;
+}
+
+.header-footer-content {
+  display: flex;
+  margin-top: 13px;
+  width: 100%;
+  /* max-width: 1291px; */
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: Alexandria, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  justify-content: start;
+}
+
+.header-logo-image {
+  aspect-ratio: 1.63;
+  object-fit: contain;
+  object-position: center;
+  width: 114px;
+}
+
+.header-logo-text {
+  align-self: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.header-nav-container {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: stretch;
+  gap: 40px 100px;
+  flex-wrap: wrap;
+}
+
+.header-brand-name {
+  align-self: stretch;
+  gap: 10px;
+  font-family: Alexandria, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 31px;
+  color: #fff;
+  font-weight: 400;
+  /* text-align: center; */
+  /* margin-right: 285px; */
+}
+
+.header-nav-links {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.header-nav-items {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 36px;
+  justify-content: center;
+}
+
+.header-contact-link {
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* width: px; */
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header-social-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 22px;
+  align-self: stretch;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .header-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header-divider,
+  .header-footer-content,
+  .header-nav-container {
+    max-width: 100%;
+  }
+}
+
+/* header */
 
 @media (max-width: 991px) {
   .window-treatments-section {
@@ -322,11 +471,6 @@
   .product-name {
     white-space: initial;
     padding: 0 20px;
-  }
-
-  .tagline {
-    max-width: 100%;
-    margin-top: 40px;
   }
 
   /* .image-grid {
