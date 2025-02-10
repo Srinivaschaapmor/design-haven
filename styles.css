@@ -358,7 +358,7 @@
   color: #fff;
   font-weight: 400;
   /* text-align: center; */
-  /* margin-right: 285px; */
+  margin-left: 110px;
 }
 
 .header-nav-links {
@@ -387,6 +387,12 @@
   text-decoration: none;
   font-size: 20px;
 }
+
+.header-social-link {
+  text-decoration: none;
+}
+
+
 
 .header-social-icon {
   aspect-ratio: 1;
