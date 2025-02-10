@@ -250,7 +250,9 @@
   flex-grow: 1;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+.grid-image:hover {
+  transform: scale(1.05);
+}
 .separator {
   min-height: 7px;
   margin-top: 77px;
@@ -413,8 +415,8 @@
   font-size: 31px;
   color: #fff;
   font-weight: 500;
-  /* text-align: center; */
-  margin-left: 110px;
+  text-align: center;
+  margin-left: 6rem;
 }
 
 .header-nav-links {
@@ -441,7 +443,7 @@
   /* width: px; */
   color: inherit;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Montserrat";
 }
 
@@ -489,13 +491,13 @@
   margin-left: 20px;
 }
 
-.carosouel-product-image {
+/* .carosouel-product-image {
   aspect-ratio: 0.93;
   object-fit: contain;
   object-position: center;
   width: 100%;
   flex-grow: 1;
-}
+} */
 
 .carosouel-section-header {
   align-self: center;
@@ -555,24 +557,33 @@
 }
 /* /////////// */
 .image-slider {
-  width: 100%;
-  /* height: 500px;  */
+  width: 80%; /* Reduce width of the image slider */
+  max-width: 500px; /* Set a max width */
+  height: auto; /* Maintain aspect ratio */
   position: relative;
   overflow: hidden;
 }
 
 .image-slider img {
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Ensures images scale properly */
+  height: 100%; /* Maintain aspect ratio */
+  /* min-height: 700px; Adjust height as needed */
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  animation: slide 3s infinite;
+  animation: slide 9s infinite;
+}
+
+.carosouel-product-image {
+  max-width: 80%; /* Reduce overall image size */
+  height: auto; /* Maintain aspect ratio */
+  aspect-ratio: 1; /* Ensure square ratio if needed */
+  object-fit: contain;
 }
 
 .image-slider img:nth-child(1) {
-  animation-delay: 2s;
+  animation-delay: 0s;
 }
 
 .image-slider img:nth-child(2) {
@@ -580,20 +591,20 @@
 }
 
 .image-slider img:nth-child(3) {
-  animation-delay: 4s;
+  animation-delay: 6s;
 }
 
 @keyframes slide {
   0% {
     opacity: 0;
   }
-  5% {
+  10% {
     opacity: 1;
   }
-  33.33% {
+  40% {
     opacity: 1;
   }
-  38.33% {
+  50% {
     opacity: 0;
   }
   100% {
@@ -608,7 +619,7 @@
 .carosouel-section-title {
   position: absolute;
   opacity: 0;
-  animation: textCycle 3s infinite;
+  animation: textCycle 9s infinite;
 }
 
 /* Keyframes to cycle through the texts */
@@ -632,15 +643,15 @@
 
 /* Specific delay for each text */
 .carosouel-section-title:nth-child(1) {
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 
 .carosouel-section-title:nth-child(2) {
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 .carosouel-section-title:nth-child(3) {
-  animation-delay: 3s;
+  animation-delay: 6s;
 }
 
 @media (max-width: 991px) {
@@ -764,5 +775,11 @@
 
   .footer-heading {
     margin-left: 9px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+  .header-footer {
+    font-size: 20px;
   }
 }
