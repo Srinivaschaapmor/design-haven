@@ -1,6 +1,12 @@
 * {
   margin: 0;
-  max-width: 100%;
+  /* max-width: 100%; */
+  /* max-width: 2560px; */
+  /* text-align: center; */
+  max-width: 2560px;
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
 }
 .sticky-wrap {
   background-color: black;
@@ -11,7 +17,7 @@
   right: 0px;
   top: 30%;
   z-index: 100;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-size: 20px;
   padding: 10px;
   display: flex;
@@ -30,7 +36,7 @@
 
 .promo-banner {
   background-color: #ede8d0;
-  width: 100%;
+
   width: 100%;
   min-height: 34px;
   display: flex;
@@ -40,16 +46,13 @@
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  font: 500 14px/32px Montserrat, sans-serif;
+  /* font: 500 14px/32px Montserrat, sans-serif; */
+  font-family: "montserrat";
 }
 
 .promo-text {
   width: 100%;
-  max-width: 1010px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  max-width: 100vw;
 }
 
 .logo-container {
@@ -64,6 +67,7 @@
   aspect-ratio: 0.16;
   object-fit: contain;
   width: 5px;
+  margin-left: 10px;
 }
 
 .hero-image {
@@ -76,6 +80,7 @@
   display: flex;
   /* margin-top: 32px; */
   width: 100%;
+  /* height: 100vh; */
   /* max-width: 1305px; */
   flex-direction: column;
   overflow: hidden;
@@ -83,6 +88,27 @@
   color: #fff;
   font-weight: 500;
   text-align: center;
+  margin-top: 2rem;
+}
+
+.hero-text-1 {
+  color: black;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Merriweather";
+}
+.hero-text-2 {
+  color: black;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+}
+.carousel-item img {
+  height: 700px; /* Adjust as needed */
+  object-fit: cover;
+  width: 100%;
 }
 
 .hero-overlay {
@@ -120,14 +146,16 @@
 }
 
 .main-title {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 50px;
   width: 100%;
   /* max-width: 1309px; */
   color: #000;
   text-align: center;
-  text-transform: uppercase;
-  font: 400 36px Alexandria, sans-serif;
+  text-transform: capitalize;
+  font-weight: 300;
+  /* font: 400 36px Alexandria, sans-serif; */
+  font-family: "Montserrat";
 }
 
 .products-title {
@@ -178,14 +206,25 @@
 .tagline {
   color: #000;
   text-align: center;
-  text-transform: uppercase;
-  margin-top: 30px;
-  font: 300 30px/2 "Amiri Quran", sans-serif;
-}
+  text-transform: capitalize;
 
+  font-weight: 300;
+  /* font: 300 30px/2 "Amiri Quran", sans-serif; */
+  font-family: "Montserrat";
+}
+.tagline-text {
+  color: black;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Merriweather";
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .image-grid {
   margin-top: 20px;
   width: 94%;
+  margin: auto;
   /* margin-left: 100px;
   margin-right: 100px;
   max-width: 1309px; */
@@ -195,6 +234,7 @@
 .image-row {
   gap: 20px;
   display: flex;
+  margin-top: 1.3rem;
 }
 
 .image-column {
@@ -208,6 +248,7 @@
   object-fit: cover;
   width: 100%;
   flex-grow: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .separator {
@@ -221,25 +262,29 @@
   width: 100%;
   color: #fff;
   text-align: center;
-  padding: 70px 67px;
+  /* padding: 2rem; */
+  padding: 2rem 2rem 0rem 2rem;
 
   font: 24px Alexandria, sans-serif;
 }
 
 .footer-content {
   display: flex;
-  margin-bottom: -29px;
+  /* margin-bottom: -29px; */
   width: 100%;
+  justify-content: center;
+  gap: 2rem;
   /* max-width: 1239px; */
-  padding: 0px 100px;
-  align-items: start;
-  gap: 20px;
-  justify-content: space-between;
+  /* padding: 0px 100px; */
+  /* align-items: start; */
+
+  /* gap: 20px; */
+  /* justify-content: space-between; */
 }
 
 .footer-logo-container {
   display: flex;
-  min-height: 94px;
+  /* min-height: 94px; */
   flex-direction: column;
   font-size: 10px;
   font-weight: 400;
@@ -253,12 +298,14 @@
 
 .footer-brand {
   align-self: center;
+  font-family: "montserrat";
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "montserrat";
 }
 
 .footer-heading {
@@ -268,11 +315,17 @@
 
 .footer-text {
   font-weight: 300;
-  margin-top: 39px;
+  margin-top: 10px;
 }
 .footer-text a {
   color: white;
   text-decoration: none; /* Remove underline if needed */
+}
+.copyright {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 12px;
+  font-family: "montserrat";
 }
 
 .visually-hidden {
@@ -290,7 +343,7 @@
 /* header */
 
 .header-footer {
-  background-color: #000;
+  background-color: #000000;
   padding: 10px 40px;
   /* text-align: center; */
   width: 100%;
@@ -306,25 +359,27 @@
 
 .header-footer-content {
   display: flex;
+  flex-direction: row;
   margin-top: 13px;
   width: 100%;
-  /* max-width: 1291px; */
-  align-items: stretch;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  max-width: 2600px;
+  /* align-items: stretch; */
+  gap: 10%;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
   align-items: center;
+  /* background-color: blue; */
 }
 
 .header-logo-container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  font-family: Alexandria, -apple-system, Roboto, Helvetica, sans-serif;
+
   font-size: 10px;
   color: #fff;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   justify-content: start;
 }
 
@@ -339,6 +394,7 @@
   align-self: center;
   gap: 10px;
   margin: 0;
+  font-family: "montserrat";
 }
 
 .header-nav-container {
@@ -353,10 +409,10 @@
 .header-brand-name {
   align-self: stretch;
   gap: 10px;
-  font-family: Alexandria, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "Merriweather";
   font-size: 31px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
   /* text-align: center; */
   margin-left: 110px;
 }
@@ -386,13 +442,12 @@
   color: inherit;
   text-decoration: none;
   font-size: 20px;
+  font-family: "Montserrat";
 }
 
 .header-social-link {
   text-decoration: none;
 }
-
-
 
 .header-social-icon {
   aspect-ratio: 1;
@@ -405,20 +460,210 @@
   flex-shrink: 0;
 }
 
+/* body carsouel css */
+.carosouel-blinds-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.carosouel-image-grid {
+  width: 100%;
+}
+
+.carosouel-image-row {
+  gap: 20px;
+  display: flex;
+}
+
+.carosouel-image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  line-height: normal;
+  width: 50%;
+}
+
+.carosouel-image-column:last-child {
+  margin-left: 20px;
+}
+
+.carosouel-product-image {
+  aspect-ratio: 0.93;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.carosouel-section-header {
+  align-self: center;
+  display: flex;
+  /* margin-top: 96px; */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  min-height: 36px;
+  width: 230px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carosouel-section-title {
+  font-family: "Montserrat";
+  font-size: 40px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.7;
+  width: 100%;
+  padding: 0 22px;
+}
+
+@media (max-width: 991px) {
+  .carosouel-image-grid {
+    max-width: 100%;
+  }
+
+  .carosouel-image-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .carosouel-image-column {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .carosouel-product-image {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .carosouel-section-header {
+    margin-top: 40px;
+  }
+
+  .carosouel-section-title {
+    padding: 0 20px;
+    white-space: normal;
+  }
+}
+/* /////////// */
+.image-slider {
+  width: 100%;
+  /* height: 500px;  */
+  position: relative;
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: slide 3s infinite;
+}
+
+.image-slider img:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.image-slider img:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.image-slider img:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  38.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.carosouel-section-header {
+  position: relative;
+}
+
+.carosouel-section-title {
+  position: absolute;
+  opacity: 0;
+  animation: textCycle 3s infinite;
+}
+
+/* Keyframes to cycle through the texts */
+@keyframes textCycle {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  38.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Specific delay for each text */
+.carosouel-section-title:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.carosouel-section-title:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.carosouel-section-title:nth-child(3) {
+  animation-delay: 3s;
+}
+
 @media (max-width: 991px) {
   .header-footer {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .header-divider,
+  /* .header-divider,
   .header-footer-content,
   .header-nav-container {
     max-width: 100%;
-  }
+  } */
 }
 
 /* header */
+
+@media (max-width: 2060) {
+  * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 @media (max-width: 991px) {
   .window-treatments-section {
@@ -438,10 +683,11 @@
     max-width: 100%;
   }
 
-  .hero-content {
+  /* .hero-content {
     max-width: 90%;
     margin: 30%;
-  }
+    height: 100vh;
+  } */
 
   .hero-overlay {
     max-width: 100%;
