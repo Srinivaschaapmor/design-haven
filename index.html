@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>The Design Haven</title>
     <link rel="icon" href="assets/Logo.png" type="image/icon type" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylesNew.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Albert Sans"
       rel="stylesheet"
@@ -26,12 +28,15 @@
     />
   </head>
   <body class="main">
-    <div class="sticky-wrap">
-      <a href="mailto:info@designhavenusa.com" class="header-contact-link"
-        >Get In Touch</a
-      >
-    </div>
+    
     <div class="window-treatments-section">
+
+      <div class="sticky-wrap">
+        <a href="mailto:info@designhavenusa.com" class="header-contact-link"
+          >Get In Touch</a
+        >
+      </div>
+
       <div class="promo-banner">
         <div class="promo-text">
           UP TO 25% OFF ALL WINDOW TREATMENTS | $250 IN REFERRAL | FREE MEASURE
@@ -433,15 +438,9 @@
 
       <footer class="footer">
         <div class="footer-content">
-          <div class="header-logo-container">
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                width: auto;
-                align-items: center;
-              "
+          <div class="footer-logo-container">
+            <div class="footer-logo"
+             
             >
               <img
                 loading="lazy"
@@ -463,14 +462,7 @@
             </div>
           </div>
           <div
-            style="
-              display: flex;
-              flex-direction: row;
-              justify-content: space-evenly;
-              /* gap: 10rem; */
-              width: 90%;
-              align-items: center;
-            "
+            class="footer-contact-details"
           >
             <div class="footer-column">
               <h4 class="footer-heading">Get In Touch</h4>
@@ -500,6 +492,10 @@
         </div>
       </footer>
     </div>
+
+
+
+    <!---------------------- Scripts ---------------------------->
     <script src="bestSeller.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
