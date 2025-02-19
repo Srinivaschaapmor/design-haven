@@ -1,7 +1,7 @@
 * {
   margin: 0;
   /* max-width: 100%; */
-  /* max-width: 2560px; */
+  max-width: 2000px;
   /* text-align: center; */
 
   /* max-width: 2000px; */
@@ -73,12 +73,6 @@
   padding: 15px;
 }
 
-.hero-text-1 {
-  color: black;
-  font-weight: 400;
-  font-size: 2rem;
-  font-family: "Albert Sans";
-}
 
 
 
@@ -131,24 +125,7 @@
   padding: 0 22px;
 }
 
-.tagline {
-  color: #000;
-  text-align: center;
-  text-transform: capitalize;
 
-  font-weight: 300;
-  /* font: 300 30px/2 "Amiri Quran", sans-serif; */
-  font-family: "Montserrat";
-}
-.tagline-text {
-  color: black;
-  font-weight: 600;
-  font-size: 2rem;
-  text-align: center;
-  font-family: "Albert Sans";
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
 
 .separator {
   min-height: 7px;
@@ -156,16 +133,7 @@
   width: 100%;
 }
 
-.footer {
-  background-color: #262626;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  /* padding: 2rem; */
-  padding: 2rem 2rem 0rem 2rem;
 
-  font: 24px Alexandria, sans-serif;
-}
 
 
 
@@ -222,11 +190,6 @@ margin-top: 10px;
   align-self: start;
 }
 
-.footer-text {
-  font-weight: 300;
-  margin-top: 10px;
-  font-size: 16px;
-}
 .footer-text a {
   color: white;
   text-decoration: none; /* Remove underline if needed */
@@ -271,36 +234,10 @@ margin-top: 10px;
 
 
 
-.header-logo-image {
-  /* aspect-ratio: 1.63; */
-  /* object-fit: contain; */
-  /* object-position: center; */
-  width: 60px;
-  margin: 0;
-  margin-left: 22px;
-}
 
-.header-logo-text {
-  /* text-align: center; */
-  /* align-self: center; */
-  /* gap: 10px; */
-  margin: 0;
-  font-size: 12px;
 
-  min-width: 100px;
-  margin-top: 6px;
-}
 
-.header-nav-container {
-  /* display: flex; */
-  /* margin-top: auto; */
-  /* margin-bottom: auto; */
-  /* align-items: stretch; */
-  /* gap: 40px 100px; */
-  /* flex-wrap: wrap; */
-  /* background-color: green; */
-  width: 60%;
-}
+
 
 
 
@@ -675,10 +612,7 @@ margin-top: 10px;
     padding: 0 20px;
   }
 
-  /* .main-title {
-    max-width: 100%;
-    font: 300 40px Alexandria, sans-serif;
-  } */
+ 
 
   .product-showcase {
     padding-right: 20px;
@@ -730,9 +664,7 @@ margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  .footer-heading {
-    margin-left: 9px;
-  }
+ 
 }
 @media (max-width: 991px) {
   .carosouel-image-grid {
@@ -774,10 +706,37 @@ margin-top: 10px;
 
   }
 }
-@media (min-width: 760px) and (max-width: 2600px) {
+@media (min-width: 760px)  {
   .promo-text {
     width: 100%;
     max-width: 100vw;
+  }
+  /* and (max-width: 3000px) */
+.header-nav-container {
+
+  width: 60%;
+}
+  .header-logo-image {
+    /* aspect-ratio: 1.63; */
+    /* object-fit: contain; */
+    /* object-position: center; */
+    width: 60px;
+    margin: 0;
+    margin-left: 22px;
+  }
+  .header-logo-text {
+    /* text-align: center; */
+    /* align-self: center; */
+    /* gap: 10px; */
+    margin: 0;
+    font-size: 12px;
+  
+    min-width: 100px;
+    margin-top: 6px;
+    display: inline-block;
+    max-width: 20%;
+    text-align: center;
+    font-family: Albert Sans;
   }
   .header-nav-links {
     display: flex;
@@ -850,7 +809,7 @@ margin-top: 10px;
     /* width: px; */
     color: inherit;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Montserrat";
   }
 
@@ -874,6 +833,12 @@ margin-top: 10px;
   }
 
 
+  .hero-text-1 {
+    color: black;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: "Albert Sans";
+  }
   .hero-text-2 {
     color: black;
     font-weight: 100;
@@ -882,6 +847,26 @@ margin-top: 10px;
     margin-bottom: 1rem;
     font-family: "Montserrat";
   }
+
+  .tagline {
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+  
+    font-weight: 300;
+    /* font: 300 30px/2 "Amiri Quran", sans-serif; */
+    font-family: "Montserrat";
+  }
+  .tagline-text {
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Albert Sans";
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .carousel-item img {
     width: 65%;
     height: 400px;
@@ -897,11 +882,20 @@ margin-top: 10px;
     object-fit: contain;
   }
 
+ 
+
   .footer {
+    background-color: #262626;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* padding: 2rem; */
+    padding: 2rem 2rem 0rem 2rem;
     max-width: 100%;
     padding: 100px 15px;
     padding-bottom: 50px;
     padding-top: 50px;
+    font: 24px Alexandria, sans-serif;
   }
 
   .footer-content {
@@ -956,9 +950,19 @@ margin-top: 10px;
 
   }
  
+  .footer-heading {
+    margin-left: 9px;
+  }
   .header-nav-items {
     display: flex;
   }
+
+  
+.footer-text {
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 16px;
+}
 }
 
 @media (min-width: 550px) and (max-width: 760px) {
@@ -967,7 +971,33 @@ margin-top: 10px;
     width: 100%;
     max-width: 100vw;
   }
+  
+.header-nav-container {
 
+  width: 60%;
+}
+  .header-logo-image {
+    /* aspect-ratio: 1.63; */
+    /* object-fit: contain; */
+    /* object-position: center; */
+    width: 60px;
+    margin: 0;
+    margin-left: 22px;
+  }
+  .header-logo-text {
+    /* text-align: center; */
+    /* align-self: center; */
+    /* gap: 10px; */
+    margin: 0;
+    font-size: 12px;
+  
+    min-width: 100px;
+    margin-top: 6px;
+    display: inline-block;
+    max-width: 20%;
+    text-align: center;
+    font-family: Albert Sans;
+  }
   .header-nav-links {
     display: flex;
     flex-direction: row;
@@ -1064,6 +1094,14 @@ margin-top: 10px;
     font-family: "Montserrat";
   }
 
+  
+.hero-text-1 {
+  color: black;
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: "Albert Sans";
+}
+
   .hero-text-2 {
     color: black;
     font-weight: 100;
@@ -1072,6 +1110,26 @@ margin-top: 10px;
     margin-bottom: 1rem;
     font-family: "Montserrat";
   }
+
+  .tagline {
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+  
+    font-weight: 300;
+    /* font: 300 30px/2 "Amiri Quran", sans-serif; */
+    font-family: "Montserrat";
+  }
+  .tagline-text {
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Albert Sans";
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
 
 .carosouel-product-image {
   max-width: 100%; /* Reduce overall image size */
@@ -1094,7 +1152,9 @@ margin-top: 10px;
 
 }
 
-
+.footer-heading {
+  margin-left: 9px;
+}
 .footer-logo-container {
   /* display: flex;
   flex-direction: column;
@@ -1115,6 +1175,26 @@ margin-top: 10px;
 }
 
 
+.footer-text {
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #262626;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  /* padding: 2rem; */
+  padding: 2rem 2rem 0rem 2rem;
+  max-width: 100%;
+  padding: 100px 15px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font: 24px Alexandria, sans-serif;
+}
+
 }
 
 @media (max-width: 550px) {
@@ -1128,7 +1208,35 @@ margin-top: 10px;
   .promo-text {
   width: 100%;
   max-width: 100vw;
-  font-size: 85%;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.header-nav-container {
+
+  width: 100%;
+}
+.header-logo-image {
+  /* aspect-ratio: 1.63; */
+  /* object-fit: contain; */
+  /* object-position: center; */
+  width: 41px;
+  margin: 0;
+  margin-left: 17px;
+}
+.header-logo-text {
+  /* text-align: center; */
+  /* align-self: center; */
+  /* gap: 10px; */
+  margin: 0;
+  font-size: 12px;
+
+  min-width: 100px;
+  margin-top: 6px;
+  display: none;
+  max-width: 20%;
+  text-align: center;
+  font-family: Albert Sans;
 }
   .header-nav-links {
     display: flex;
@@ -1141,8 +1249,8 @@ margin-top: 10px;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
     /* background-color: yellow; */
-    width: 46%;
-
+    width: 50%;
+margin-left: 18%;
   }
   .header-footer-content {
     display: flex;
@@ -1161,10 +1269,11 @@ margin-top: 10px;
     font-size: 10px;
     color: #fff;
     font-weight: 400;
-    width: 20%;
-    margin-top: 10px;
-    margin-left: 37%;
+    width: 68%;
+    margin-top: 2%;
+    margin-left: 0%;
     /* background-color: blue; */
+    height: 34px;
   }
 
   .sticky-wrap {
@@ -1185,15 +1294,16 @@ margin-top: 10px;
   }
   .header-brand-name {
     /* align-self: stretch; */
-    display: none;
-    margin-bottom: 0;
+    /* display: flex; */
+    margin-top: 10%;
     gap: 10px;
     font-family: Albert Sans;
-    font-size: 20px;
+    font-size: 70%;
     color: #fff;
     font-weight: 500;
     text-align: center;
-    /* margin-left: 6rem; */
+    margin-left: 20%;
+    width: max-content;
   }
 
   .header-contact-link {
@@ -1226,7 +1336,7 @@ margin-top: 10px;
     margin-top: 50px;
     /* margin-bottom: 50px; */
     width: 100%;
-    font-size: 28px;
+    font-size: 20px;
     /* max-width: 1309px; */
     color: #000;
     text-align: center;
@@ -1236,6 +1346,13 @@ margin-top: 10px;
     font-family: "Montserrat";
   }
   
+  .hero-text-1 {
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Albert Sans";
+  }
+
   .hero-text-2 {
     color: black;
     font-weight: 100;
@@ -1243,8 +1360,29 @@ margin-top: 10px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-family: "Montserrat";
-    font-size: 100%;
+    font-size: 13px;
   }
+
+  .tagline {
+    color: #000;
+    text-align: center;
+    text-transform: capitalize;
+  
+    font-weight: 300;
+    /* font: 300 30px/2 "Amiri Quran", sans-serif; */
+    font-family: "Montserrat";
+    font-size: 20px;
+  }
+  .tagline-text {
+    color: black;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+    font-family: "Albert Sans";
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+  }
+
   .carousel-item img {
     width: 100%;
     height: 200px;
@@ -1305,10 +1443,33 @@ margin-top: 10px;
     gap: 2rem;
     
   }
-  
+  .footer-heading {
+    margin-left: 2px;
+    font-size: 20px;
+  }
   .header-nav-items {
     display: block;
+    margin-top: 4%;
+    width: max-content;
   }
-;
+
+  .footer {
+    background-color: #262626;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* padding: 2rem; */
+    padding: 1rem 1rem 0rem 1rem;
+    max-width: 100%;
+    /* padding: 100px 15px;
+    padding-bottom: 50px;
+    padding-top: 50px; */
+    font: 24px Alexandria, sans-serif;
+  }
+  .footer-text {
+    font-weight: 300;
+    margin-top: 6px;
+    font-size: 13px;
+  }
 
 }

@@ -4,7 +4,9 @@ const nextButton = document.querySelector(".next");
 const carouselTrack = document.querySelector(".bestsellers-carousel-track");
 const items = document.querySelectorAll(".bestsellers-carousel-item");
 const itemWidth = items[0].offsetWidth; // Width of a single item
-const marginRight = 0; // Margin between items
+const marginRight = 20; // Margin between items
+
+//const marginRight = items.style.width
 
 let currentIndex = 0;
 const totalItems = items.length;
@@ -21,19 +23,26 @@ function moveCarousel() {
   carouselTrack.style.transform = `translateX(${offset}px)`;
 }
 
+
+const getTotalItems = () => {
+  return window.innerWidth < 500 ? totalItems - 1 : totalItems - 2;
+};
+
 // Handle previous button click
 prevButton.addEventListener("click", () => {
+  const adjustedTotalItems = getTotalItems(); // Get the adjusted totalItems based on screen width
   if (currentIndex > 0) {
     currentIndex--;
   } else {
-    currentIndex = totalItems - 2; // Loop back to the last item
+    currentIndex = adjustedTotalItems; // Loop back to the last item
   }
   moveCarousel();
 });
 
 // Handle next button click
 nextButton.addEventListener("click", () => {
-  if (currentIndex < totalItems - 2) {
+  const adjustedTotalItems = getTotalItems(); // Get the adjusted totalItems based on screen width
+  if (currentIndex < adjustedTotalItems) {
     currentIndex++;
   } else {
     currentIndex = 0; // Loop back to the first item
