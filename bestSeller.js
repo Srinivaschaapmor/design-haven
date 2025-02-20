@@ -23,9 +23,12 @@ function moveCarousel() {
   carouselTrack.style.transform = `translateX(${offset}px)`;
 }
 
-
 const getTotalItems = () => {
-  return window.innerWidth < 500 ? totalItems - 1 : totalItems - 2;
+  return window.innerWidth < 550
+    ? totalItems - 1
+    : window.innerWidth <= 1024 && window.innerWidth > 550
+    ? totalItems - 2
+    : totalItems - 3;
 };
 
 // Handle previous button click
